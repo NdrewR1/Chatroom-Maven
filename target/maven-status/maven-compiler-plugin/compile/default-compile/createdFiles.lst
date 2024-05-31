@@ -7,7 +7,6 @@ com\mycompany\chatroom\App.class
 module-info.class
 com\mycompany\swing\ComponentResizer.class
 com\mycompany\chatroom\App$3.class
-com\mycompany\form\Menu_Left$3.class
 com\mycompany\main\Main$2.class
 com\mycompany\form\Chat.class
 com\mycompany\chatroom\App$6.class

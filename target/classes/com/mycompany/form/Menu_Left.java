@@ -29,13 +29,12 @@ public class Menu_Left extends javax.swing.JPanel {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         menuButton1 = new com.mycompany.component.MenuButton();
         menuButton2 = new com.mycompany.component.MenuButton();
-        menuButton3 = new com.mycompany.component.MenuButton();
 
         jLayeredPane1.setLayout(new javax.swing.BoxLayout(jLayeredPane1, javax.swing.BoxLayout.LINE_AXIS));
 
         menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
-        menuButton1.setMaximumSize(new java.awt.Dimension(43, 43));
-        menuButton1.setMinimumSize(new java.awt.Dimension(43, 43));
+        menuButton1.setMaximumSize(new java.awt.Dimension(100, 43));
+        menuButton1.setMinimumSize(new java.awt.Dimension(100, 43));
         menuButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuButton1ActionPerformed(evt);
@@ -43,9 +42,9 @@ public class Menu_Left extends javax.swing.JPanel {
         });
         jLayeredPane1.add(menuButton1);
 
-        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45-colored.png"))); // NOI18N
-        menuButton2.setMaximumSize(new java.awt.Dimension(43, 43));
-        menuButton2.setMinimumSize(new java.awt.Dimension(43, 43));
+        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45.png"))); // NOI18N
+        menuButton2.setMaximumSize(new java.awt.Dimension(100, 43));
+        menuButton2.setMinimumSize(new java.awt.Dimension(100, 43));
         menuButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuButton2ActionPerformed(evt);
@@ -53,24 +52,13 @@ public class Menu_Left extends javax.swing.JPanel {
         });
         jLayeredPane1.add(menuButton2);
 
-        menuButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
-        menuButton3.setMaximumSize(new java.awt.Dimension(43, 43));
-        menuButton3.setMinimumSize(new java.awt.Dimension(43, 43));
-        menuButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuButton3ActionPerformed(evt);
-            }
-        });
-        jLayeredPane1.add(menuButton3);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(0, 0, 0)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,14 +77,9 @@ public class Menu_Left extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_menuButton2ActionPerformed
 
-    private void menuButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuButton3ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane jLayeredPane1;
     private com.mycompany.component.MenuButton menuButton1;
     private com.mycompany.component.MenuButton menuButton2;
-    private com.mycompany.component.MenuButton menuButton3;
     // End of variables declaration//GEN-END:variables
 }
