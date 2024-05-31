@@ -4,6 +4,9 @@
  */
 package com.mycompany.form;
 
+import com.mycompany.component.Item_People;
+import net.miginfocom.swing.MigLayout;
+
 /**
  *
  * @author User
@@ -15,8 +18,20 @@ public class Menu_Left extends javax.swing.JPanel {
      */
     public Menu_Left() {
         initComponents();
+        init();
+    }
+    
+    private void init(){
+        menuList.setLayout(new MigLayout());
+        showPeople();
     }
 
+    private void showPeople(){
+        for (int i =0;i<10;i++){
+            menuList.add(new Item_People("People "+i), "wrap");
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,6 +44,9 @@ public class Menu_Left extends javax.swing.JPanel {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         menuButton1 = new com.mycompany.component.MenuButton();
         menuButton2 = new com.mycompany.component.MenuButton();
+        menuList = new javax.swing.JLayeredPane();
+
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLayeredPane1.setLayout(new javax.swing.BoxLayout(jLayeredPane1, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -52,20 +70,34 @@ public class Menu_Left extends javax.swing.JPanel {
         });
         jLayeredPane1.add(menuButton2);
 
+        javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
+        menuList.setLayout(menuListLayout);
+        menuListLayout.setHorizontalGroup(
+            menuListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        menuListLayout.setVerticalGroup(
+            menuListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 487, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                    .addComponent(menuList)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(0, 0, 0)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(487, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(menuList))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -81,5 +113,6 @@ public class Menu_Left extends javax.swing.JPanel {
     private javax.swing.JLayeredPane jLayeredPane1;
     private com.mycompany.component.MenuButton menuButton1;
     private com.mycompany.component.MenuButton menuButton2;
+    private javax.swing.JLayeredPane menuList;
     // End of variables declaration//GEN-END:variables
 }

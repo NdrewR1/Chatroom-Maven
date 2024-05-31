@@ -4,6 +4,7 @@
  */
 package com.mycompany.form;
 
+import com.mycompany.component.Item_People;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -22,8 +23,15 @@ public class Menu_Left extends javax.swing.JPanel {
     
     private void init(){
         menuList.setLayout(new MigLayout());
+        showPeople();
     }
 
+    private void showPeople(){
+        for (int i =0;i<10;i++){
+            menuList.add(new Item_People("People "+i), "wrap");
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
