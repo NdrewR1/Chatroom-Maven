@@ -10,15 +10,15 @@ import java.awt.Color;
  *
  * @author User
  */
-public class Chat_Left extends javax.swing.JLayeredPane {
+public class Chat_Right extends javax.swing.JLayeredPane {
 
     /**
      * Creates new form Chat_Left
      */
-    public Chat_Left() {
+    public Chat_Right() {
         initComponents();
-        txt.setBackground(new Color(242,242,242));
-      
+        txt.setBackground(new Color(179,233,255));
+
     }
     
     public void setText(String text){
@@ -37,6 +37,8 @@ public class Chat_Left extends javax.swing.JLayeredPane {
 
         txt = new com.mycompany.component.Chat_Item();
 
+        setLayer(txt, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -48,10 +50,10 @@ public class Chat_Left extends javax.swing.JLayeredPane {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 

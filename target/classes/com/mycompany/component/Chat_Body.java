@@ -20,7 +20,7 @@ public class Chat_Body extends javax.swing.JPanel {
     public Chat_Body() {
         initComponents();
         init();
-        addItemLeft("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
         addItemLeft("test2");
     }
     
@@ -33,8 +33,16 @@ public class Chat_Body extends javax.swing.JPanel {
     
     public void addItemLeft(String text){
         Chat_Left item = new Chat_Left();
-        item.setText("  "+text);
+        item.setText(text);
         bodyPanel.add(item,"wrap, w ::85%");
+   
+        refresh();
+    }
+    
+    public void addItemRight(String text){
+        Chat_Right item = new Chat_Right();
+        item.setText(text);
+        bodyPanel.add(item,"wrap, al right, w ::85%");
    
         refresh();
     }

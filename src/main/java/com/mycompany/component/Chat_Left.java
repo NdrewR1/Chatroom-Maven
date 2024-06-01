@@ -18,7 +18,7 @@ public class Chat_Left extends javax.swing.JLayeredPane {
     public Chat_Left() {
         initComponents();
         txt.setBackground(new Color(242,242,242));
-        this.setOpaque(true);
+      
     }
     
     public void setText(String text){

@@ -25,7 +25,6 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         txt.setOpaque(false);
         
     }
-
     
     public void setText(String Text){
         txt.setText(Text);

@@ -9,6 +9,7 @@ com\mycompany\swing\JIMSendTextPane$WarpIconView.class
 com\mycompany\swing\ComponentResizer.class
 com\mycompany\main\Main$2.class
 com\mycompany\component\Item_People$1.class
+com\mycompany\component\Chat_Right.class
 com\mycompany\chatroom\App$6.class
 com\mycompany\swing\ScrollBar.class
 com\mycompany\main\Main.class
