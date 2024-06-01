@@ -4,6 +4,8 @@
  */
 package com.mycompany.component;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import javax.swing.Icon;
 import javax.swing.JButton;
 
@@ -46,5 +48,15 @@ public class MenuButton extends JButton {
             setIcon(iconSimple);
         }
     }
+    
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if(isSelected()){
+            g.setColor(new Color(252, 137, 124));
+            g.fill3DRect(0, getHeight()-2, getWidth(), getHeight(), true);
+        }
+    }
+
 
 }

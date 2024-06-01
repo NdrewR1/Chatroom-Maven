@@ -30,9 +30,23 @@ public class Menu_Left extends javax.swing.JPanel {
     }
 
     private void showPeople(){
+        menuList.removeAll();
         for (int i =0;i<50;i++){
             menuList.add(new Item_People("People "+i), "wrap");
         }
+        refresh();
+    }
+    private void showRoom(){
+        menuList.removeAll();
+        for (int i =0;i<50;i++){
+            menuList.add(new Item_People("Room "+i), "wrap");
+        }
+        refresh();
+    }
+    
+    private void refresh(){
+        repaint();
+        revalidate();
     }
     
     /**
@@ -52,14 +66,13 @@ public class Menu_Left extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        menuLPane.setLayout(new javax.swing.BoxLayout(menuLPane, javax.swing.BoxLayout.LINE_AXIS));
+        menuLPane.setLayout(new java.awt.GridLayout(1, 2));
 
         menuPeople.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45.png"))); // NOI18N
         menuPeople.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
         menuPeople.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45.png"))); // NOI18N
         menuPeople.setMaximumSize(new java.awt.Dimension(100, 43));
         menuPeople.setMinimumSize(new java.awt.Dimension(100, 43));
-        menuPeople.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
         menuPeople.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuPeopleActionPerformed(evt);
@@ -85,7 +98,7 @@ public class Menu_Left extends javax.swing.JPanel {
         lpScroller.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lpScroller.setOpaque(false);
 
-        menuList.setBackground(new java.awt.Color(255, 255, 255));
+        menuList.setBackground(new java.awt.Color(248, 248, 248));
         menuList.setOpaque(true);
 
         javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
@@ -131,9 +144,12 @@ public class Menu_Left extends javax.swing.JPanel {
     private void menuPeopleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPeopleActionPerformed
         menuPeople.setSelected(true);
         menuRoom.setSelected(false);
+        
+        showPeople();
     }//GEN-LAST:event_menuPeopleActionPerformed
 
     private void menuRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuRoomActionPerformed
+        showRoom();
         menuPeople.setSelected(false);
         menuRoom.setSelected(true);
     }//GEN-LAST:event_menuRoomActionPerformed
