@@ -4,6 +4,7 @@
  */
 package com.mycompany.swing;
 
+import java.awt.Dimension;
 import javax.swing.JScrollBar;
 
 /**
@@ -13,5 +14,6 @@ import javax.swing.JScrollBar;
 public class ScrollBar extends JScrollBar {
     public ScrollBar(){
         setUI(new ModernScrollBarUI());
+        this.setPreferredSize(new Dimension(5,5));
     }
 }

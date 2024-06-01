@@ -4,6 +4,10 @@
  */
 package com.mycompany.component;
 
+import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 /**
  *
  * @author User
@@ -16,8 +20,28 @@ public class Item_People extends javax.swing.JPanel {
     public Item_People(String name) {
         initComponents();
         labelName.setText(name);
+        init();
     }
+    
+    private void init(){
+        this.addMouseListener(new MouseAdapter(){
+            
 
+            @Override
+            public void mouseEntered(MouseEvent e) {
+              setBackground(new Color(242,242,242));
+            }
+            
+            @Override
+            public void mouseExited(MouseEvent e) {
+             
+              setBackground(new Color(255,255,255));
+            }
+
+        
+        });
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

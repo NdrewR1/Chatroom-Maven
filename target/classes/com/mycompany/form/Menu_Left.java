@@ -26,6 +26,7 @@ public class Menu_Left extends javax.swing.JPanel {
         lpScroller.setVerticalScrollBar(new ScrollBar());
         menuList.setLayout(new MigLayout());
         showPeople();
+        menuPeople.setSelected(true);
     }
 
     private void showPeople(){
@@ -44,43 +45,47 @@ public class Menu_Left extends javax.swing.JPanel {
     private void initComponents() {
 
         menuLPane = new javax.swing.JLayeredPane();
-        menuButton1 = new com.mycompany.component.MenuButton();
-        menuButton2 = new com.mycompany.component.MenuButton();
+        menuPeople = new com.mycompany.component.MenuButton();
+        menuRoom = new com.mycompany.component.MenuButton();
         lpScroller = new javax.swing.JScrollPane();
         menuList = new javax.swing.JLayeredPane();
 
         setBackground(new java.awt.Color(255, 255, 255));
-        setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         menuLPane.setLayout(new javax.swing.BoxLayout(menuLPane, javax.swing.BoxLayout.LINE_AXIS));
 
-        menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
-        menuButton1.setMaximumSize(new java.awt.Dimension(100, 43));
-        menuButton1.setMinimumSize(new java.awt.Dimension(100, 43));
-        menuButton1.addActionListener(new java.awt.event.ActionListener() {
+        menuPeople.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45.png"))); // NOI18N
+        menuPeople.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
+        menuPeople.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45.png"))); // NOI18N
+        menuPeople.setMaximumSize(new java.awt.Dimension(100, 43));
+        menuPeople.setMinimumSize(new java.awt.Dimension(100, 43));
+        menuPeople.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
+        menuPeople.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuButton1ActionPerformed(evt);
+                menuPeopleActionPerformed(evt);
             }
         });
-        menuLPane.add(menuButton1);
+        menuLPane.add(menuPeople);
 
-        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45.png"))); // NOI18N
-        menuButton2.setMaximumSize(new java.awt.Dimension(100, 43));
-        menuButton2.setMinimumSize(new java.awt.Dimension(100, 43));
-        menuButton2.addActionListener(new java.awt.event.ActionListener() {
+        menuRoom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45.png"))); // NOI18N
+        menuRoom.setIconSelected(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45-colored.png"))); // NOI18N
+        menuRoom.setIconSimple(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45.png"))); // NOI18N
+        menuRoom.setMaximumSize(new java.awt.Dimension(100, 43));
+        menuRoom.setMinimumSize(new java.awt.Dimension(100, 43));
+        menuRoom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuButton2ActionPerformed(evt);
+                menuRoomActionPerformed(evt);
             }
         });
-        menuLPane.add(menuButton2);
+        menuLPane.add(menuRoom);
 
         lpScroller.setBackground(new java.awt.Color(255, 255, 255));
+        lpScroller.setBorder(null);
         lpScroller.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         lpScroller.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lpScroller.setOpaque(false);
 
         menuList.setBackground(new java.awt.Color(255, 255, 255));
-        menuList.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         menuList.setOpaque(true);
 
         javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
@@ -102,11 +107,11 @@ public class Menu_Left extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(menuLPane, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE))
+                .addComponent(menuLPane, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(lpScroller, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                    .addComponent(lpScroller, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         layout.setVerticalGroup(
@@ -114,28 +119,30 @@ public class Menu_Left extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addComponent(menuLPane, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(493, Short.MAX_VALUE))
+                .addContainerGap(495, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(50, Short.MAX_VALUE)
+                    .addContainerGap(52, Short.MAX_VALUE)
                     .addComponent(lpScroller, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap()))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menuButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuButton1ActionPerformed
+    private void menuPeopleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPeopleActionPerformed
+        menuPeople.setSelected(true);
+        menuRoom.setSelected(false);
+    }//GEN-LAST:event_menuPeopleActionPerformed
 
-    private void menuButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuButton2ActionPerformed
+    private void menuRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuRoomActionPerformed
+        menuPeople.setSelected(false);
+        menuRoom.setSelected(true);
+    }//GEN-LAST:event_menuRoomActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane lpScroller;
-    private com.mycompany.component.MenuButton menuButton1;
-    private com.mycompany.component.MenuButton menuButton2;
     private javax.swing.JLayeredPane menuLPane;
     private javax.swing.JLayeredPane menuList;
+    private com.mycompany.component.MenuButton menuPeople;
+    private com.mycompany.component.MenuButton menuRoom;
     // End of variables declaration//GEN-END:variables
 }
