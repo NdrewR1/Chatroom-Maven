@@ -20,7 +20,7 @@ public class Chat_Body extends javax.swing.JPanel {
     public Chat_Body() {
         initComponents();
         init();
-        addItemLeft("hello");
+        addItemLeft("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
         addItemLeft("test2");
     }
     
@@ -28,13 +28,14 @@ public class Chat_Body extends javax.swing.JPanel {
         bodyPanel.setLayout(new MigLayout("fillx"));
         sPane.setVerticalScrollBar(new JScrollBar());
         sPane.getVerticalScrollBar().setBackground(Color.WHITE);
+//        sPane.setHorizontalScrollBar(new JScrollBar());
     }
     
     public void addItemLeft(String text){
         Chat_Left item = new Chat_Left();
         item.setText("  "+text);
-        bodyPanel.add(item,"wrap");
-        
+        bodyPanel.add(item,"wrap, w ::85%");
+   
         refresh();
     }
     
@@ -57,6 +58,7 @@ public class Chat_Body extends javax.swing.JPanel {
         bodyPanel = new javax.swing.JPanel();
 
         sPane.setBorder(null);
+        sPane.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         bodyPanel.setBackground(new java.awt.Color(255, 255, 255));
 

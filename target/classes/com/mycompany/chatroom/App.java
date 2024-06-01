@@ -25,7 +25,7 @@ public class App extends javax.swing.JFrame {
     private void init(){
         ComponentResizer com = new ComponentResizer();
         com.registerComponent(this);
-        com.setMinimumSize(new Dimension(800,500));
+        com.setMinimumSize(new Dimension(800, 500));
         com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());
         com.setSnapSize(new Dimension(10,10));
 //        backgroundPanel1.setLayout(new MigLayout("filly"));
