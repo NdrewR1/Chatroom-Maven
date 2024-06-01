@@ -38,6 +38,7 @@ com\mycompany\chatroom\Room.class
 com\mycompany\swing\JIMSendTextPane$WarpEditorKit.class
 com\mycompany\component\Item_People.class
 com\mycompany\swing\ModernScrollBarUI.class
+com\mycompany\swing\PictureBox.class
 com\mycompany\chatroom\App$4.class
 com\mycompany\swing\ModernScrollBarUI$InvisibleScrollBarButton.class
 com\mycompany\chatroom\SystemInfo.class
