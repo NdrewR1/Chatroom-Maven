@@ -4,8 +4,8 @@
  */
 package com.mycompany.component;
 
+import com.mycompany.swing.ScrollBar;
 import java.awt.Color;
-import javax.swing.JScrollBar;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -22,11 +22,41 @@ public class Chat_Body extends javax.swing.JPanel {
         init();
         addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
         addItemLeft("test2");
+        addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");addItemRight("hellotest2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2");
+        addItemLeft("test2");
+        
+   
     }
     
     public void init(){
-        bodyPanel.setLayout(new MigLayout("fillx"));
-        sPane.setVerticalScrollBar(new JScrollBar());
+        bodyPanel.setLayout(new MigLayout("fillx","","2[]2"));
+        sPane.setVerticalScrollBar(new ScrollBar());
         sPane.getVerticalScrollBar().setBackground(Color.WHITE);
 //        sPane.setHorizontalScrollBar(new JScrollBar());
     }
@@ -66,7 +96,7 @@ public class Chat_Body extends javax.swing.JPanel {
         bodyPanel = new javax.swing.JPanel();
 
         sPane.setBorder(null);
-        sPane.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        sPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         bodyPanel.setBackground(new java.awt.Color(255, 255, 255));
 

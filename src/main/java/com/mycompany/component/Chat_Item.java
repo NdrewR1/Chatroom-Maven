@@ -20,7 +20,7 @@ public class Chat_Item extends javax.swing.JLayeredPane {
      */
     public Chat_Item() {
         initComponents();
-//        txt.setEditable(false);
+        txt.setEditable(false);
         txt.setBackground(new Color(242,242,242,242));
         txt.setOpaque(false);
         
