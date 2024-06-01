@@ -4,4 +4,5 @@ module com.mycompany.chatroom {
     requires java.logging;
     exports com.mycompany.chatroom;
     requires miglayout.swing;
+    requires java.sql;
 }
