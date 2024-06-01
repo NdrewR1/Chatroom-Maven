@@ -5,4 +5,5 @@ module com.mycompany.chatroom {
     exports com.mycompany.chatroom;
     requires miglayout.swing;
     requires java.sql;
+    requires com.microsoft.sqlserver.jdbc;
 }

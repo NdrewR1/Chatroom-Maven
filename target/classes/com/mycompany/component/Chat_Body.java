@@ -20,12 +20,27 @@ public class Chat_Body extends javax.swing.JPanel {
     public Chat_Body() {
         initComponents();
         init();
+        addItemLeft("hello");
+        addItemLeft("test2");
     }
     
     public void init(){
         bodyPanel.setLayout(new MigLayout("fillx"));
         sPane.setVerticalScrollBar(new JScrollBar());
         sPane.getVerticalScrollBar().setBackground(Color.WHITE);
+    }
+    
+    public void addItemLeft(String text){
+        Chat_Left item = new Chat_Left();
+        item.setText("  "+text);
+        bodyPanel.add(item,"wrap");
+        
+        refresh();
+    }
+    
+    private void refresh(){
+        bodyPanel.repaint();
+        bodyPanel.revalidate();
     }
     
 

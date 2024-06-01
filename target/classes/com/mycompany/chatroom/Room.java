@@ -1,3 +1,4 @@
+package com.mycompany.chatroom;
 import java.util.ArrayList;
 import java.util.Random;
 

@@ -1,9 +1,11 @@
-import java.beans.Statement;
+package com.mycompany.chatroom;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+//import java.sql.*;
 import java.util.Scanner;
 
 
@@ -66,7 +68,7 @@ public class DBConnect implements Runnable {
         ResultSet rs;
         
         try {
-            stmt = conn.createStatement();
+            stmt =  conn.createStatement();
             sql = String.format("SELECT username, pass FROM UserList WHERE username LIKE '%s'",user);
 
 
