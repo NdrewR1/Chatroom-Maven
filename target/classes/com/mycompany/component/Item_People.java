@@ -32,7 +32,6 @@ public class Item_People extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        labelName.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         labelName.setText("Name");
 
         imageAvatar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-cat-profile-45 (1).png"))); // NOI18N

@@ -5,6 +5,7 @@
 package com.mycompany.form;
 
 import com.mycompany.component.Item_People;
+import com.mycompany.swing.ScrollBar;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -22,12 +23,13 @@ public class Menu_Left extends javax.swing.JPanel {
     }
     
     private void init(){
+        lpScroller.setVerticalScrollBar(new ScrollBar());
         menuList.setLayout(new MigLayout());
         showPeople();
     }
 
     private void showPeople(){
-        for (int i =0;i<10;i++){
+        for (int i =0;i<50;i++){
             menuList.add(new Item_People("People "+i), "wrap");
         }
     }
@@ -41,14 +43,16 @@ public class Menu_Left extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLayeredPane1 = new javax.swing.JLayeredPane();
+        menuLPane = new javax.swing.JLayeredPane();
         menuButton1 = new com.mycompany.component.MenuButton();
         menuButton2 = new com.mycompany.component.MenuButton();
+        lpScroller = new javax.swing.JScrollPane();
         menuList = new javax.swing.JLayeredPane();
 
         setBackground(new java.awt.Color(255, 255, 255));
+        setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLayeredPane1.setLayout(new javax.swing.BoxLayout(jLayeredPane1, javax.swing.BoxLayout.LINE_AXIS));
+        menuLPane.setLayout(new javax.swing.BoxLayout(menuLPane, javax.swing.BoxLayout.LINE_AXIS));
 
         menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-people-45-colored.png"))); // NOI18N
         menuButton1.setMaximumSize(new java.awt.Dimension(100, 43));
@@ -58,7 +62,7 @@ public class Menu_Left extends javax.swing.JPanel {
                 menuButton1ActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(menuButton1);
+        menuLPane.add(menuButton1);
 
         menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon/icons8-room-45.png"))); // NOI18N
         menuButton2.setMaximumSize(new java.awt.Dimension(100, 43));
@@ -68,18 +72,29 @@ public class Menu_Left extends javax.swing.JPanel {
                 menuButton2ActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(menuButton2);
+        menuLPane.add(menuButton2);
+
+        lpScroller.setBackground(new java.awt.Color(255, 255, 255));
+        lpScroller.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        lpScroller.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lpScroller.setOpaque(false);
+
+        menuList.setBackground(new java.awt.Color(255, 255, 255));
+        menuList.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        menuList.setOpaque(true);
 
         javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
         menuList.setLayout(menuListLayout);
         menuListLayout.setHorizontalGroup(
             menuListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 222, Short.MAX_VALUE)
         );
         menuListLayout.setVerticalGroup(
             menuListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 487, Short.MAX_VALUE)
+            .addGap(0, 488, Short.MAX_VALUE)
         );
+
+        lpScroller.setViewportView(menuList);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -87,17 +102,24 @@ public class Menu_Left extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-                    .addComponent(menuList)))
+                .addComponent(menuLPane, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lpScroller, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(menuList))
+                .addComponent(menuLPane, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(493, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(50, Short.MAX_VALUE)
+                    .addComponent(lpScroller, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -110,9 +132,10 @@ public class Menu_Left extends javax.swing.JPanel {
     }//GEN-LAST:event_menuButton2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JScrollPane lpScroller;
     private com.mycompany.component.MenuButton menuButton1;
     private com.mycompany.component.MenuButton menuButton2;
+    private javax.swing.JLayeredPane menuLPane;
     private javax.swing.JLayeredPane menuList;
     // End of variables declaration//GEN-END:variables
 }

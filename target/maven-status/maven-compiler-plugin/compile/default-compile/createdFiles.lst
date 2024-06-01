@@ -5,6 +5,7 @@ com\mycompany\chatroom\App.class
 com\mycompany\swing\ComponentResizer.class
 com\mycompany\main\Main$2.class
 com\mycompany\chatroom\App$6.class
+com\mycompany\swing\ScrollBar.class
 com\mycompany\main\Main.class
 com\mycompany\component\MenuButton.class
 com\mycompany\chatroom\App$2.class
@@ -18,5 +19,7 @@ com\mycompany\form\Menu_Left$2.class
 com\mycompany\main\Main$1.class
 com\mycompany\chatroom\App$1.class
 com\mycompany\component\Item_People.class
+com\mycompany\swing\ModernScrollBarUI.class
 com\mycompany\chatroom\App$4.class
+com\mycompany\swing\ModernScrollBarUI$InvisibleScrollBarButton.class
 com\mycompany\chatroom\SystemInfo.class
