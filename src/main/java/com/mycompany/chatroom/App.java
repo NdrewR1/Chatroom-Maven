@@ -8,6 +8,7 @@ import com.mycompany.swing.ComponentResizer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
+import net.miginfocom.swing.MigLayout;
     
 /**
  *
@@ -27,6 +28,7 @@ public class App extends javax.swing.JFrame {
         com.setMinimumSize(new Dimension(800,500));
         com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());
         com.setSnapSize(new Dimension(10,10));
+//        backgroundPanel1.setLayout(new MigLayout("filly"));
     }
 
     /**
@@ -44,8 +46,8 @@ public class App extends javax.swing.JFrame {
         titleBar1 = new javax.swing.JPanel();
         bttnMinimize = new javax.swing.JButton();
         bttnClose = new javax.swing.JButton();
-        jLayeredPane1 = new javax.swing.JLayeredPane();
-        menu2 = new com.mycompany.form.Menu();
+        body = new javax.swing.JLayeredPane();
+        menu1 = new com.mycompany.form.Menu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -98,7 +100,7 @@ public class App extends javax.swing.JFrame {
         titleBar1Layout.setHorizontalGroup(
             titleBar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBar1Layout.createSequentialGroup()
-                .addContainerGap(950, Short.MAX_VALUE)
+                .addContainerGap(1084, Short.MAX_VALUE)
                 .addComponent(bttnMinimize, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bttnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -129,44 +131,46 @@ public class App extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jLayeredPane1.setLayout(new java.awt.BorderLayout());
+        body.setLayout(new java.awt.BorderLayout());
+        body.add(menu1, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout backgroundPanel1Layout = new javax.swing.GroupLayout(backgroundPanel1);
         backgroundPanel1.setLayout(backgroundPanel1Layout);
         backgroundPanel1Layout.setHorizontalGroup(
             backgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(titleBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(backgroundPanel1Layout.createSequentialGroup()
-                .addGap(1019, 1019, 1019)
-                .addComponent(jLayeredPane1))
-            .addGroup(backgroundPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(menu2, javax.swing.GroupLayout.DEFAULT_SIZE, 1014, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(backgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(backgroundPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(body, javax.swing.GroupLayout.DEFAULT_SIZE, 1148, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         backgroundPanel1Layout.setVerticalGroup(
             backgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgroundPanel1Layout.createSequentialGroup()
                 .addComponent(titleBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(564, 564, 564))
+            .addGroup(backgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundPanel1Layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(body, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
         );
 
         javax.swing.GroupLayout borderLayout = new javax.swing.GroupLayout(border);
         border.setLayout(borderLayout);
         borderLayout.setHorizontalGroup(
             borderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1026, Short.MAX_VALUE)
-            .addGroup(borderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(backgroundPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(borderLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(backgroundPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         borderLayout.setVerticalGroup(
             borderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 592, Short.MAX_VALUE)
-            .addGroup(borderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(backgroundPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, borderLayout.createSequentialGroup()
+                .addComponent(backgroundPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -219,7 +223,7 @@ public class App extends javax.swing.JFrame {
 
     private void bttnMinimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bttnMinimizeMouseClicked
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_bttnMinimizeMouseClicked
 
     /**
@@ -260,11 +264,11 @@ public class App extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel backgroundPanel1;
+    private javax.swing.JLayeredPane body;
     private javax.swing.JPanel border;
     private javax.swing.JButton bttnClose;
     private javax.swing.JButton bttnMinimize;
-    private javax.swing.JLayeredPane jLayeredPane1;
-    private com.mycompany.form.Menu menu2;
+    private com.mycompany.form.Menu menu1;
     private javax.swing.JPanel titleBar;
     private javax.swing.JPanel titleBar1;
     // End of variables declaration//GEN-END:variables
