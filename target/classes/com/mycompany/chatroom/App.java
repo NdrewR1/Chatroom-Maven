@@ -5,10 +5,10 @@
 package com.mycompany.chatroom;
 
 import com.mycompany.swing.ComponentResizer;
+import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
-import net.miginfocom.swing.MigLayout;
     
 /**
  *
@@ -17,9 +17,12 @@ import net.miginfocom.swing.MigLayout;
 public class App extends javax.swing.JFrame {
     private int pX;
     private int pY;
+    
     public App() {
+        
         initComponents();
         init();
+        CardLayout cl = (CardLayout) body.getLayout();
     }
     
     private void init(){
@@ -28,7 +31,9 @@ public class App extends javax.swing.JFrame {
         com.setMinimumSize(new Dimension(800, 500));
         com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());
         com.setSnapSize(new Dimension(10,10));
-//        backgroundPanel1.setLayout(new MigLayout("filly"));
+//        backgroundPanel1.setLayout(new MigLayout("filly
+        login1.setVisible(true);
+        menu1.setVisible(false);
     }
 
     /**
@@ -48,6 +53,7 @@ public class App extends javax.swing.JFrame {
         bttnClose = new javax.swing.JButton();
         body = new javax.swing.JLayeredPane();
         menu1 = new com.mycompany.form.Menu();
+        login1 = new com.mycompany.form.Login();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -131,8 +137,9 @@ public class App extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        body.setLayout(new java.awt.BorderLayout());
-        body.add(menu1, java.awt.BorderLayout.CENTER);
+        body.setLayout(new java.awt.CardLayout());
+        body.add(menu1, "card2");
+        body.add(login1, "card3");
 
         javax.swing.GroupLayout backgroundPanel1Layout = new javax.swing.GroupLayout(backgroundPanel1);
         backgroundPanel1.setLayout(backgroundPanel1Layout);
@@ -149,7 +156,7 @@ public class App extends javax.swing.JFrame {
             backgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgroundPanel1Layout.createSequentialGroup()
                 .addComponent(titleBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(564, 564, 564))
+                .addGap(603, 603, 603))
             .addGroup(backgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundPanel1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -268,6 +275,7 @@ public class App extends javax.swing.JFrame {
     private javax.swing.JPanel border;
     private javax.swing.JButton bttnClose;
     private javax.swing.JButton bttnMinimize;
+    private com.mycompany.form.Login login1;
     private com.mycompany.form.Menu menu1;
     private javax.swing.JPanel titleBar;
     private javax.swing.JPanel titleBar1;
