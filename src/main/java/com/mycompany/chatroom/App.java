@@ -4,6 +4,8 @@
  */
 package com.mycompany.chatroom;
 
+
+import com.mycompany.service.Service;
 import com.mycompany.swing.ComponentResizer;
 import java.awt.CardLayout;
 import java.awt.Dimension;
@@ -26,6 +28,7 @@ public class App extends javax.swing.JFrame {
         
 //        Client client = new Client();
 //        client.run(); 
+        Service.getInstance().startServer();
         
     }
     

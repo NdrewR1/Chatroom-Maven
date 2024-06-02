@@ -4,15 +4,12 @@ C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\my
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\form\Page_Login.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\swing\PanelSlide.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\Chat_Right.java
-C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\chatroom\Server.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\Chat_Bottom.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\Chat_Title.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\form\Menu_Left.java
-C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\chatroom\Client.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\swing\JIMSendTextPane.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\form\Chat.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\Chat_Left.java
-C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\main\Main.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\form\Menu_Right.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\Chat_Body.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\Chat_Item.java
@@ -20,7 +17,6 @@ C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\my
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\form\Menu.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\chatroom\SystemInfo.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\swing\ModernScrollBarUI.java
-C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\chatroom\DBConnect.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\form\Page_Register.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\swing\PictureBox.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\event\EventChat.java
@@ -28,7 +24,6 @@ C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\my
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\event\publicEvent.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\swing\ScrollBar.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\swing\ComponentResizer.java
-C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\chatroom\Room.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\chatroom\App.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\service\Service.java
 C:\Users\mykin\OneDrive\Documents\NetBeansProjects\Chatroom\src\main\java\com\mycompany\component\MenuButton.java

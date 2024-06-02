@@ -18,8 +18,8 @@ import javax.swing.JTextArea;
 public class Service {
     private static Service instance;
     private Socket client;
-    private static final int PORT_NUMBER = 9999;
-    private final String ip = "localhost";
+    private static final int PORT_NUMBER = 5556;
+    private final String ip = "127.0.0.1";
     private JTextArea txtArea;
     
     public static Service getInstance() {
@@ -35,12 +35,13 @@ public class Service {
      
     public void startServer(){
         try {
-            client  = IO.socket("http://"+NetUtil.LOCALHOST +":"+PORT_NUMBER);
+            client  = IO.socket("http://"+ip+":"+PORT_NUMBER);
+            client.open();
+            
         } catch (URISyntaxException ex) {
             Logger.getLogger(Service.class.getName()).log(Level.SEVERE, null, ex);
         }
-        client.open();
-//        txtArea.append("Connected to Server Port :"+ PORT_NUMBER +"\n");
+        
          
     }
     
