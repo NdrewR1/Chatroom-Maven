@@ -5,6 +5,7 @@
 
 package com.mycompany.form;
 
+import com.mycompany.event.Model_Data;
 import com.mycompany.event.publicEvent;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
@@ -85,7 +86,7 @@ public class Page_Register extends javax.swing.JPanel {
         uNField = new javax.swing.JTextField();
         passField = new javax.swing.JTextField();
         confPass = new javax.swing.JTextField();
-        loginButton = new javax.swing.JButton();
+        registButton = new javax.swing.JButton();
         backLogin = new javax.swing.JLabel();
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
@@ -112,10 +113,10 @@ public class Page_Register extends javax.swing.JPanel {
             }
         });
 
-        loginButton.setText("Login");
-        loginButton.addActionListener(new java.awt.event.ActionListener() {
+        registButton.setText("Register");
+        registButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginButtonActionPerformed(evt);
+                registButtonActionPerformed(evt);
             }
         });
 
@@ -139,7 +140,7 @@ public class Page_Register extends javax.swing.JPanel {
                         .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(uNField, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(registButton, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(confPass, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(passField, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(bgLayout.createSequentialGroup()
@@ -162,7 +163,7 @@ public class Page_Register extends javax.swing.JPanel {
                 .addGap(33, 33, 33)
                 .addComponent(confPass, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
-                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(registButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(backLogin)
                 .addContainerGap(68, Short.MAX_VALUE))
@@ -180,9 +181,29 @@ public class Page_Register extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loginButtonActionPerformed
+    private void registButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registButtonActionPerformed
+        String user = uNField.getText();
+        String pass = String.valueOf(passField.getText());
+        String confirmPass = String.valueOf(confPass.getText());
+        
+        if(user.equals("")){
+            uNField.grabFocus();
+        } else if(pass.equals("")){
+            passField.grabFocus();
+        } else if(!pass.equals(confirmPass)){
+            confPass.grabFocus();
+        } else {
+            
+            System.out.println("input program"+pass);
+            Model_Data data = new Model_Data(user, pass);
+            System.out.println("output data"+data.getPass());
+            System.out.println("output json"+data.toJSONObject());
+            
+            publicEvent.getInstance().getELog().register(data);
+            
+        }
+        
+    }//GEN-LAST:event_registButtonActionPerformed
 
     private void passFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passFieldActionPerformed
         // TODO add your handling code here:
@@ -201,9 +222,9 @@ public class Page_Register extends javax.swing.JPanel {
     private javax.swing.JLabel backLogin;
     private javax.swing.JPanel bg;
     private javax.swing.JTextField confPass;
-    private javax.swing.JButton loginButton;
     private javax.swing.JLabel loginLabel;
     private javax.swing.JTextField passField;
+    private javax.swing.JButton registButton;
     private javax.swing.JTextField uNField;
     // End of variables declaration//GEN-END:variables
 

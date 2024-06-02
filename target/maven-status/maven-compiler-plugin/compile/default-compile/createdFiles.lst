@@ -6,12 +6,14 @@ com\mycompany\swing\JIMSendTextPane$WarpIconView.class
 com\mycompany\form\Page_Login$6.class
 com\mycompany\component\Item_People$1.class
 com\mycompany\component\Chat_Right.class
+com\mycompany\event\Model_Data.class
 com\mycompany\form\Login.class
 com\mycompany\chatroom\App$6.class
 com\mycompany\form\Page_Login$3.class
 com\mycompany\swing\ScrollBar.class
 com\mycompany\component\Chat_Title.class
 com\mycompany\component\MenuButton.class
+com\mycompany\form\Login$1$1.class
 com\mycompany\form\Login$1.class
 com\mycompany\form\Menu.class
 com\mycompany\event\EventLogin.class
@@ -32,6 +34,7 @@ com\mycompany\chatroom\SystemInfo.class
 com\mycompany\form\Page_Login$5.class
 com\mycompany\form\Page_Login$2.class
 com\mycompany\form\Page_Register$1.class
+com\mycompany\form\Login$1$2.class
 com\mycompany\component\Chat_Body.class
 com\mycompany\chatroom\App$5.class
 com\mycompany\swing\JIMSendTextPane$WarpLabelView.class

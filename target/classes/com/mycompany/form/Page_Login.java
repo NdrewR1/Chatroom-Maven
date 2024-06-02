@@ -5,6 +5,7 @@
 
 package com.mycompany.form;
 
+import com.mycompany.event.Model_Data;
 import com.mycompany.event.publicEvent;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
@@ -166,7 +167,19 @@ public class Page_Login extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
+        String username = uNField.getText();
+        String pass = passField.getText();
+       
+        if(username.equals("")){
+            uNField.grabFocus();
+        } else if(pass.equals("")){
+            passField.grabFocus();
+        } else {
+            Model_Data data = new Model_Data(username,pass);
+            publicEvent.getInstance().getELog().login(data);
+        
+        }
+        
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void passFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passFieldActionPerformed

@@ -38,11 +38,17 @@ public class Service {
             client  = IO.socket("http://"+ip+":"+PORT_NUMBER);
             client.open();
             
+            
         } catch (URISyntaxException ex) {
             Logger.getLogger(Service.class.getName()).log(Level.SEVERE, null, ex);
         }
         
          
     }
+
+    public Socket getClient() {
+        return client;
+    }
+    
     
 }

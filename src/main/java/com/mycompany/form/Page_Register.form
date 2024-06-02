@@ -43,7 +43,7 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="uNField" min="-2" pref="273" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="loginButton" alignment="0" min="-2" pref="273" max="-2" attributes="0"/>
+                                  <Component id="registButton" alignment="0" min="-2" pref="273" max="-2" attributes="0"/>
                                   <Component id="confPass" alignment="0" min="-2" pref="273" max="-2" attributes="0"/>
                               </Group>
                               <Component id="passField" alignment="1" min="-2" pref="273" max="-2" attributes="0"/>
@@ -74,7 +74,7 @@
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="confPass" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                  <Component id="loginButton" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="registButton" min="-2" pref="33" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="backLogin" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="68" max="32767" attributes="0"/>
@@ -121,12 +121,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confPassActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="loginButton">
+        <Component class="javax.swing.JButton" name="registButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Login"/>
+            <Property name="text" type="java.lang.String" value="Register"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="backLogin">

@@ -5,8 +5,12 @@
 
 package com.mycompany.form;
 
+//import com.mycompany.event.DBEvent;
 import com.mycompany.event.EventLogin;
+import com.mycompany.event.Model_Data;
 import com.mycompany.event.publicEvent;
+import com.mycompany.service.Service;
+import io.socket.client.Ack;
 import java.awt.CardLayout;
 
 /**
@@ -26,8 +30,19 @@ public class Login extends javax.swing.JPanel {
     public void init(){
         publicEvent.getInstance().addELog(new EventLogin(){
             @Override
-            public void login() {
-                
+            public void login(Model_Data data) {
+                Service.getInstance().getClient().emit("login", data.toJSONObject(), new Ack(){
+                    @Override
+                    public void call(Object... os) {
+                        if(os.length>0){
+                           if((boolean)os[0]){
+                               System.out.println("Login Succesful");
+                               setVisible(false);
+                           }
+                       }
+                    }
+                    
+                });
             }
 
             @Override
@@ -36,8 +51,21 @@ public class Login extends javax.swing.JPanel {
             }
 
             @Override
-            public void register() {
-           
+            public void register(Model_Data data) {
+                
+                Service.getInstance().getClient().emit("register", data.toJSONObject(), new Ack(){
+                    
+                    @Override
+                    public void call(Object... os) {
+                       if(os.length>0){
+                           if((boolean)os[0]){
+                               System.out.println("Registration Succesful");
+                               setVisible(false);
+                           }
+                       }
+                    }
+                    
+                });
             }
 
             @Override

@@ -8,5 +8,6 @@ module com.mycompany.chatroom {
     requires com.microsoft.sqlserver.jdbc;
     requires io.netty.all;
     requires socket.io.client;
+    requires org.json;
     
 }

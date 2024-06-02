@@ -9,8 +9,8 @@ package com.mycompany.event;
  * @author User
  */
 public interface EventLogin {
-    public void login();
+    public void login(Model_Data data);
     public void goLogin();
-    public void register();
+    public void register(Model_Data data);
     public void goRegister();
 }

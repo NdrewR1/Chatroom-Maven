@@ -26,8 +26,6 @@ public class App extends javax.swing.JFrame {
         init();
         CardLayout cl = (CardLayout) body.getLayout();
         
-//        Client client = new Client();
-//        client.run(); 
         Service.getInstance().startServer();
         
     }
