@@ -6,4 +6,7 @@ module com.mycompany.chatroom {
     requires miglayout.swing;
     requires java.sql;
     requires com.microsoft.sqlserver.jdbc;
+    requires io.netty.all;
+    requires socket.io.client;
+    
 }

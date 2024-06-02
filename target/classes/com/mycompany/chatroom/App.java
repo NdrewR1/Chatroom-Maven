@@ -23,6 +23,10 @@ public class App extends javax.swing.JFrame {
         initComponents();
         init();
         CardLayout cl = (CardLayout) body.getLayout();
+        
+//        Client client = new Client();
+//        client.run(); 
+        
     }
     
     private void init(){

@@ -22,7 +22,6 @@ com\mycompany\component\Chat_Item.class
 com\mycompany\chatroom\DBConnect.class
 module-info.class
 com\mycompany\form\Page_Login$4.class
-com\mycompany\chatroom\Server.class
 com\mycompany\swing\JIMSendTextPane.class
 com\mycompany\chatroom\App$3.class
 com\mycompany\form\Chat.class
@@ -49,11 +48,11 @@ com\mycompany\main\Main.class
 com\mycompany\form\Page_Register$7.class
 com\mycompany\chatroom\App$2.class
 com\mycompany\component\Chat_Bottom.class
-com\mycompany\chatroom\Server$ConnectionHandler.class
 com\mycompany\form\Menu_Left$1.class
 com\mycompany\form\Page_Register$6.class
 com\mycompany\swing\JIMSendTextPane$WarpColumnFactory.class
 com\mycompany\swing\ImageAvatar.class
+com\mycompany\service\Service.class
 com\mycompany\event\publicEvent.class
 com\mycompany\form\Page_Login$1.class
 com\mycompany\form\Menu_Left$2.class

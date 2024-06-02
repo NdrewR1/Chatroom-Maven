@@ -27,27 +27,10 @@ public class Client implements Runnable {
             String inMessage;
             int idx;
 
-            // out.print("Enter new message: ");
+   
             while((inMessage=in.readLine())!=null){
                 System.out.println(inMessage);
             }
-
-
-            // inMessage = in.readLine();
-          
-            //     if(inMessage.equals("/register")) {    
-            //         out.println("Register Successed");
-            //     }
-          
-            //     else if(inMessage.equals("/login")){
-            //         out.println("Login Successed");
-            //     }
-          
-            //     else{
-            //         out.println("Option is not available");
-            //         shutdown();
-            //     }
-
 
            
 
@@ -109,8 +92,8 @@ public class Client implements Runnable {
         
     }
 
-    public static void main(String[] args) {
-        Client client = new Client();
-        client.run();
-    }
+//    public static void main(String[] args) {
+//        Client client = new Client();
+//        client.run();
+//    }
 }

@@ -27,9 +27,7 @@ public class Page_Login extends javax.swing.JPanel {
             public void mouseClicked(MouseEvent e) {
                 uNField.setText("");
                 uNField.setForeground(Color.BLACK);
-                
-                passField.setText("Password...");
-                passField.setForeground(new Color(224,224,224));
+               
             }
     
         });
@@ -41,8 +39,7 @@ public class Page_Login extends javax.swing.JPanel {
                 passField.setText("");
                 passField.setForeground(Color.BLACK);
                 
-                uNField.setText("Username...");
-                uNField.setForeground(new Color(224,224,224));
+                
             }
       
         });
